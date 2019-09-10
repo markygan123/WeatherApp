@@ -1,0 +1,11 @@
+{
+ "coord":{"lon":-81.92,"lat":41.46},
+ "weather":[{"id":800,"main":"Clear","description":"clear sky","icon":"01d"}],
+ "base":"stations",
+ "main":{"temp":299.6,"pressure":1015,"humidity":65,"temp_min":298.15,"temp_max":301.15},
+ "visibility":16093,
+ "wind":{"speed":2.1,"deg":30},
+ "clouds":{"all":1},"dt":1564528600,
+ "sys":{"type":1,"id":3455,"message":0.0098,"country":"US","sunrise":1564482014,"sunset":1564534068},
+ "timezone":-14400,"id":5176517,"name":"Westlake","cod":200
+ }

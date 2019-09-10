@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous" />   
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h2>Weather in Westlake, LA, US</h2>
+    </div>
+    <section>
+        <div>
+            <h1>{{ temp }}&#176;F</h1>
+        </div>
+        <div>
+            <p>{{ date }} as of: {{ time }}</p>
+        </div>        
+
+        <table>
+            <tbody>
+                <tr>
+                    <td><strong>Weather</strong></td>
+                    <td>{{ weather }}</td>
+                </tr>
+                <tr>
+                    <td><strong>Min. Temp.</strong></td>
+                    <td>{{ min_temp }}&#176;F</td>
+                </tr>
+                <tr>
+                    <td><strong>Max. Temp.</strong></td>
+                    <td>{{ max_temp }}&#176;F</td>
+                </tr>
+                <tr>
+                    <td><strong>Humidity</strong></td>
+                    <td>{{ humid }}%</td>
+                </tr>
+                <tr>
+                    <td><strong>Cloudiness</strong></td>
+                    <td>{{ cloud }}</td>
+                </tr> 
+                <tr>
+                    <td><strong>Heat Index</strong></td>
+                    <td>{{ heat }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+</body>
+</html>
