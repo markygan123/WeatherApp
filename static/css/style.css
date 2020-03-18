@@ -13,7 +13,7 @@ body {
 }
 
 .weather-header {
-	background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/static/images/weather-background.jpg');
+	background-image: linear-gradient(to left, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/static/images/weather-background.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
@@ -71,10 +71,15 @@ body {
 	margin-right: 360px;
 }
 
+.weather-info p,
+.weather-info,
+.footer {
+	text-transform: capitalize;
+}
+
 .footer {
 	text-align: center;
 	font-size: 1.5rem;
-	text-transform: capitalize;
 
 	margin-top: 50px;
 }
