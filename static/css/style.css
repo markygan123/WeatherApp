@@ -3,8 +3,71 @@
 	margin: 0;
 }
 
+html {
+	font-size: 10px;
+}
+
 body {
 	box-sizing: border-box;
 	font-family: sans-serif;
+}
+
+.weather-header {
+	background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/static/images/weather-background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+
+	width: 100vw;
+	height: 100vh;
+
+	color: #fff;
+}
+
+.weather-header h1 {
+	text-transform: capitalize;
+	padding: 50px 0;
+	text-shadow: 2px 2px 1px black;
+}
+
+.weather-header h1,
+.current-weather {
+	text-align: center;
+}
+
+.weather-header h1,
+.current-temp {
+	font-size: 4rem;
+}
+
+.current-temp {
+	font-weight: bold;	
+	margin-bottom: 10px;
+}
+
+.time-date,
+.weather-info div {
+	font-size: 2rem;
+}
+
+.weather-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.weather-info div {
+	display: flex;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+
+.weather-info h3 {
+	margin-left: 350px;
+}
+
+.weather-info span {
+	margin-right: 360px;
 }
 

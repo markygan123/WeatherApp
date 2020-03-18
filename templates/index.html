@@ -11,54 +11,52 @@
 </head>
 <body>
 
-    <header class="weather-header">
-        <h1>Westlake, LA current weather</h2>
-    </header>
+    <section class="weather-header">
+        <h1>Westlake, LA current weather</h1>    
 
-    <section class="current-weather">
-        <div class="current-temp">
-            <p>{{ temp }}&#176;F</p>
+        <div class="current-weather">
+            <p class="current-temp">{{ temp }}&#176;F</p>
+            <p class="time-date">{{ date }} as of: {{ time }}</p>       
         </div>
-        <div class="time-and-date">
-            <p>{{ date }} as of: {{ time }}</p>
-        </div>        
+
+        <div class="weather-info">
+            <div class="weather">
+                <h3>weather</h3>
+                <span>{{ weather }}</span>            
+            </div>
+
+            <div class="min-temp">
+                <h3>min. temp</h3>
+                <span>{{ min_temp }}&#176;F</span>
+            </div>
+
+            <div class="max-temp">
+                <h3>max. temp</h3>
+                <span>{{ max_temp }}&#176;F</span>
+            </div>
+
+            <div class="humidity">
+                <h3>humidity</h3>
+                <span>{{ humid }}%</span>
+            </div>
+
+            <div class="cloudiness">
+                <h3>cloudiness</h3>
+                <span>{{ cloud }}</span>
+            </div>
+
+            <div class="heat-index">
+                <h3>heat index</h3>
+                <span>{{ heat }}</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>all rights reserved by MYAM</p>
+        </div>
+
     </section>
 
-    <section class="weather-info">
-        <div class="weather">
-            <h3>weather</h3>
-            <span>{{ weather }}</span>            
-        </div>
-
-        <div class="min-temp">
-            <h3>min. temp</h3>
-            <span>{{ min_temp }}&#176;F</span>
-        </div>
-
-        <div class="max-temp">
-            <h3>max. temp</h3>
-            <span>{{ max_temp }}&#176;F</span>
-        </div>
-
-        <div class="humidity">
-            <h3>humidity</h3>
-            <span>{{ humid }}%</span>
-        </div>
-
-        <div class="cloudiness">
-            <h3>cloudiness</h3>
-            <span>{{ cloud }}</span>
-        </div>
-
-        <div class="heat-index">
-            <h3>heat index</h3>
-            <span>{{ heat }}</span>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>all rights reserved by MYAM</p>
-    </footer>
     
 </body>
 </html>
