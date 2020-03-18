@@ -45,6 +45,19 @@ body {
 	margin-bottom: 10px;
 }
 
+.temp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.temp a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 2rem;
+	margin-left: 10px;
+}
+
 .time-date,
 .weather-info div {
 	font-size: 2rem;
