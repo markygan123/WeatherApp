@@ -1,4 +1,9 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 body {
-    margin-top: 20px;
-    margin-left: 20px;
+	box-sizing: border-box;
+	font-family: sans-serif;
 }

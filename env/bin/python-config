@@ -1,4 +1,4 @@
-#!/home/viginti_tres/Documents/Pythons/WeatherApp/env/bin/python
+#!/home/viginti_tres/Projects/Pythons/WeatherApp/env/bin/python
 
 import sys
 import getopt
