@@ -63,11 +63,23 @@ body {
 	margin: 5px 0;
 }
 
-.weather-info h3 {
+.weather-info p {
 	margin-left: 350px;
 }
 
-.weather-info span {
+.weather-info h3 {
 	margin-right: 360px;
+}
+
+.footer {
+	text-align: center;
+	font-size: 1.5rem;
+	text-transform: capitalize;
+
+	margin-top: 50px;
+}
+
+.footer span {
+	font-weight: bold;
 }
 
