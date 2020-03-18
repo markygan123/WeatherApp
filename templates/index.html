@@ -4,52 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <title>Weather Today</title>
       
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="header">
-        <h2>Weather in Westlake, LA, US</h2>
-    </div>
-    <section>
-        <div>
-            <h1>{{ temp }}&#176;F</h1>
+
+    <header class="weather-header">
+        <h1>Westlake, LA current weather</h2>
+    </header>
+
+    <section class="current-weather">
+        <div class="current-temp">
+            <p>{{ temp }}&#176;F</p>
         </div>
-        <div>
+        <div class="time-and-date">
             <p>{{ date }} as of: {{ time }}</p>
         </div>        
-
-        <table>
-            <tbody>
-                <tr>
-                    <td><strong>Weather</strong></td>
-                    <td>{{ weather }}</td>
-                </tr>
-                <tr>
-                    <td><strong>Min. Temp.</strong></td>
-                    <td>{{ min_temp }}&#176;F</td>
-                </tr>
-                <tr>
-                    <td><strong>Max. Temp.</strong></td>
-                    <td>{{ max_temp }}&#176;F</td>
-                </tr>
-                <tr>
-                    <td><strong>Humidity</strong></td>
-                    <td>{{ humid }}%</td>
-                </tr>
-                <tr>
-                    <td><strong>Cloudiness</strong></td>
-                    <td>{{ cloud }}</td>
-                </tr> 
-                <tr>
-                    <td><strong>Heat Index</strong></td>
-                    <td>{{ heat }}</td>
-                </tr>
-            </tbody>
-        </table>
     </section>
+
+    <section class="weather-info">
+        <div class="weather">
+            <h3>weather</h3>
+            <span>{{ weather }}</span>            
+        </div>
+
+        <div class="min-temp">
+            <h3>min. temp</h3>
+            <span>{{ min_temp }}&#176;F</span>
+        </div>
+
+        <div class="max-temp">
+            <h3>max. temp</h3>
+            <span>{{ max_temp }}&#176;F</span>
+        </div>
+
+        <div class="humidity">
+            <h3>humidity</h3>
+            <span>{{ humid }}%</span>
+        </div>
+
+        <div class="cloudiness">
+            <h3>cloudiness</h3>
+            <span>{{ cloud }}</span>
+        </div>
+
+        <div class="heat-index">
+            <h3>heat index</h3>
+            <span>{{ heat }}</span>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>all rights reserved by MYAM</p>
+    </footer>
     
 </body>
 </html>
