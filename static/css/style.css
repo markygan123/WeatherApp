@@ -24,6 +24,12 @@ body {
 	color: #fff;
 }
 
+/*@media (max-width: 767px) {
+	.weather-header {
+		height: 740px;
+	}
+}*/
+
 .weather-header h1 {
 	text-transform: capitalize;
 	padding: 50px 0;
@@ -38,6 +44,18 @@ body {
 .weather-header h1,
 .current-temp {
 	font-size: 4rem;
+}
+
+@media (max-width: 767px) {
+	.weather-header h1 {
+		margin: 0 20px;
+		font-size: 3rem;
+
+	}
+
+	.current-temp {
+		font-size: 4rem;
+	}
 }
 
 .current-temp {
@@ -63,12 +81,19 @@ body {
 	font-size: 2rem;
 }
 
+@media (max-width: 767px) {
+	.time-date {
+		font-size: 1.6rem;
+	}
+}
+
 .weather-info {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 20px;
 }
+
 
 .weather-info div {
 	display: flex;
@@ -82,6 +107,26 @@ body {
 
 .weather-info h3 {
 	margin-right: 360px;
+}
+
+@media (max-width: 767px) {
+	.weather-info {
+		margin-top: 35px;
+	}
+
+	.weather-info div {
+		margin: 10px 0;
+	}
+
+	.weather-info p {
+		margin-left: 30px;
+		font-size: 1.7rem;
+	}
+
+	.weather-info h3 {
+		margin-right: 31px;
+		font-size: 1.7rem;
+	}
 }
 
 .weather-info p,
@@ -99,5 +144,11 @@ body {
 
 .footer span {
 	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.footer {
+		margin-top: 100px;
+	}
 }
 
