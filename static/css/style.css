@@ -129,6 +129,26 @@ body {
 	}
 }
 
+@media (min-width: 768px) and (max-width: 800px) {
+	.weather-info {
+		margin-top: 45px;
+	}
+
+	.weather-info div {
+		margin: 20px 0;
+	}
+
+	.weather-info p {
+		margin-left: 100px;
+	}
+
+	.weather-info h3 {
+		margin-right: 100px;
+	}
+
+}
+
+
 .weather-info p,
 .weather-info,
 .footer {
@@ -146,9 +166,21 @@ body {
 	font-weight: bold;
 }
 
+@media (max-width: 375px) {
+	.footer {
+		margin-top: 45px;
+	}
+}
+
 @media (max-width: 767px) {
 	.footer {
 		margin-top: 100px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+	.footer {
+		margin-top: 200px;
 	}
 }
 
