@@ -24,12 +24,6 @@ body {
 	color: #fff;
 }
 
-/*@media (max-width: 767px) {
-	.weather-header {
-		height: 740px;
-	}
-}*/
-
 .weather-header h1 {
 	text-transform: capitalize;
 	padding: 50px 0;
