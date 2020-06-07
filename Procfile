@@ -1,1 +1,1 @@
-web: gunicorn WeatherApp:temp
+web: gunicorn temp:temp
